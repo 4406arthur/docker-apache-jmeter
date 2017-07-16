@@ -12,9 +12,9 @@ RUN \
   rm -rf /var/cache/apk/*
 
 # Install Jmeter
-ADD jmeter/apache-jmeter-3.2.tgz /opt
+ADD jmeter/apache-jmeter-3.1.tgz /opt
 
-ENV JMETER_HOME /opt/apache-jmeter-3.2
+ENV JMETER_HOME /opt/apache-jmeter-3.1
 ENV JMETER_BIN ${JMETER_HOME}/bin
 # Set global PATH such that "jmeter" command is found
 ENV PATH $PATH:$JMETER_BIN
